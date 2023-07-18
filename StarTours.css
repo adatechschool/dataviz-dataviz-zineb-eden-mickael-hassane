@@ -1,0 +1,67 @@
+/*Import de la police depuis google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/*On enlève les marges de la page entière*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*On met l'image de fond*/
+body{
+    background-image: url(./Images/backgroundstarfield.gif);
+    font-family: 'Orbitron', sans-serif;
+}
+
+/*flexboxes*/
+header{
+    margin : 15px;
+    display: flex; /*J'active la fonction flexbox*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+header i{
+    color : white;
+    font-size : 40px
+}
+
+header img{
+    width: 60px;
+    height: 50px;
+}
+
+h1{
+    color : white;
+    text-align: center;
+}
+
+.grid-images {
+    display: grid;
+    margin-top: 50px;
+    margin-left: 150px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 70px;
+    }
+    #Bespin { 
+        grid-area: 2 / 1 / 3 / 2; 
+        height: 134px;
+        width: 137px;
+    }
+    #Coruscant { grid-area: 4 / 2 / 5 / 3; }
+    #Endor { grid-area: 6 / 1 / 7 / 2; }
+    #Felucia { grid-area: 5 / 3 / 6 / 4; }
+    #Geonosis { grid-area: 2 / 3 / 3 / 4; }
+    #Hoth { grid-area: 2 / 6 / 3 / 7; }
+    #Mustafar { grid-area: 3 / 5 / 4 / 6; }
+    #Naboo { grid-area: 6 / 6 / 7 / 7; }
+    #Scarif { grid-area: 5 / 5 / 6 / 6; }
+    #Tatooine { grid-area: 1 / 5 / 2 / 6; }
+
+/*div img{
+    width: 60px;
+    height: 60px;
+}
