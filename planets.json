@@ -1,0 +1,103 @@
+[
+		{
+			"name": "Tatooine",
+			"language": ["Common","Huttese"],
+			"accomodation": "Mos Eisley Cantina",
+			"currencies": ["Wupiupi","Trugut","Peggat"],
+			"to see": ["Mos Eisley", "Podracing Boonta Eve - Mos Espa", "Skywalker's farm", "Kenobi's house"],
+			"traveler": "Adventurer",
+			"residents": ["Hutts","Merchants","Humans"],
+            "image": "" 
+			},
+		{
+			"name": "Geonosis",
+			"language": ["Common","Geonosii"],
+			"accomodation": "Troglodyte caves",
+			"currencies": ["Trugut","Peggat"],
+			"to see": "Petranaki Arena",
+			"traveler": "Adventurer",
+			"residents": "Geonosians",
+            "image": ""
+			},
+        {
+            "name": "Bespin",
+            "language": "Common",
+            "accomodation": "Hotels",
+            "currencies": "Dataries",
+            "to see": "Cloud City",
+            "traveler": "Architecture lover",
+            "residents": "Humans",
+            "image": ""
+            },
+        {
+            "name": "Endor",
+            "language": "Ewok",
+            "accomodation": "Tree houses",
+            "currencies": [],
+            "to see": ["Ewok Tree villages","Forest hikes"],
+            "traveler": "Hitchhiker",
+            "residents": "Ewoks",
+            "image": ""
+            },
+        {
+            "name": "Scarif",
+            "language": "Common",
+            "accomodation": "Empire bunkers",
+            "currencies": "Dataries",
+            "to see": "White sand beaches",
+            "traveler": "Chill",
+            "residents": "Humans",
+            "image": "" 
+            },
+        {
+            "name": "Mustafar",
+            "language": [],
+            "accomodation": "Vader's Castle",
+            "currencies": [],
+            "to see": "Vader's Castle",
+            "traveler": "Adventurer",
+            "residents": [],
+            "image": ""
+            },
+        {
+            "name": "Naboo",
+            "language": "Common",
+            "accomodation": ["Hotels of Theed", "Lake houses"],
+            "currencies": "Dataries",
+            "to see": ["Theed", "Lake Country", "Gungan City"],
+            "traveler": ["Architecture lover","Hitchhiker"],
+            "residents": ["Humans","Gungans"],
+            "image": ""
+            },
+        {
+            "name": "Hoth",
+            "language": [],
+            "accomodation": ["Rebel base", "Ice caves"],
+            "currencies": [],
+            "to see": ["Rebel base", "Ice caves", "Tauntaun riding"],
+            "traveler": "Adventurer",
+            "residents": [],
+            "image": ""
+            },
+        {
+            "name": "Coruscant",
+            "language": ["Common","Multicultural"],
+            "accomodation": "Hotels",
+            "currencies": "Dataries",
+            "to see": ["Galactic Senate", "Jedi Temple", "Galactic Opera", "Dexter's Bar"],
+            "traveler": "City",
+            "residents": "Multicultural",
+            "image": ""
+            },
+        {
+            "name": "Felucia",
+            "language": [],
+            "accomodation": "Vegetal houses",
+            "currencies": [],
+            "to see": ["Flora", "Colored giant mushrooms"],
+            "traveler": "Adventurer",
+            "residents": [],
+            "image": ""
+            }
+    ]
+
