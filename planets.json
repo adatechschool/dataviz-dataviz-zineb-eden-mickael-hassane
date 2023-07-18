@@ -7,7 +7,7 @@
 			"to see": ["Mos Eisley", "Podracing Boonta Eve - Mos Espa", "Skywalker's farm", "Kenobi's house"],
 			"traveler": "Adventurer",
 			"residents": ["Hutts","Merchants","Humans"],
-            "image": "" 
+            "image": "Images/Grande_Ar ne_de_Mos_Espa.jpg" 
 			},
 		{
 			"name": "Geonosis",
@@ -17,7 +17,7 @@
 			"to see": "Petranaki Arena",
 			"traveler": "Adventurer",
 			"residents": "Geonosians",
-            "image": ""
+            "image": "Images/Arène_Petranaki.png"
 			},
         {
             "name": "Bespin",
@@ -27,7 +27,7 @@
             "to see": "Cloud City",
             "traveler": "Architecture lover",
             "residents": "Humans",
-            "image": ""
+            "image": "Images/Bespin.png"
             },
         {
             "name": "Endor",
@@ -37,7 +37,7 @@
             "to see": ["Ewok Tree villages","Forest hikes"],
             "traveler": "Hitchhiker",
             "residents": "Ewoks",
-            "image": ""
+            "image": "Images/Endor.png"
             },
         {
             "name": "Scarif",
@@ -47,7 +47,7 @@
             "to see": "White sand beaches",
             "traveler": "Chill",
             "residents": "Humans",
-            "image": "" 
+            "image": "Images/ScarifBeach.jpg" 
             },
         {
             "name": "Mustafar",
@@ -57,7 +57,7 @@
             "to see": "Vader's Castle",
             "traveler": "Adventurer",
             "residents": [],
-            "image": ""
+            "image": "Images/VaderCastle.jpeg"
             },
         {
             "name": "Naboo",
@@ -67,7 +67,7 @@
             "to see": ["Theed", "Lake Country", "Gungan City"],
             "traveler": ["Architecture lover","Hitchhiker"],
             "residents": ["Humans","Gungans"],
-            "image": ""
+            "image": "Images/Lake_Country.jpg"
             },
         {
             "name": "Hoth",
@@ -77,7 +77,7 @@
             "to see": ["Rebel base", "Ice caves", "Tauntaun riding"],
             "traveler": "Adventurer",
             "residents": [],
-            "image": ""
+            "image": "Images/Tauntaun.jpeg"
             },
         {
             "name": "Coruscant",
@@ -87,7 +87,7 @@
             "to see": ["Galactic Senate", "Jedi Temple", "Galactic Opera", "Dexter's Bar"],
             "traveler": "City",
             "residents": "Multicultural",
-            "image": ""
+            "image": "Images/Coruscantbynight.jpg"
             },
         {
             "name": "Felucia",
@@ -97,7 +97,7 @@
             "to see": ["Flora", "Colored giant mushrooms"],
             "traveler": "Adventurer",
             "residents": [],
-            "image": ""
+            "image": "Images/Mushrooms.jpg"
             }
     ]
 
