@@ -9,7 +9,7 @@
 }
 
 /*On met l'image de fond*/
-body{
+#Home{
     background-image: url(./Images/backgroundstarfield.gif);
     font-family: 'Orbitron', sans-serif;
 }
@@ -39,10 +39,9 @@ h1{
 
 .grid-images {
     display: grid;
-    margin-left: 50px;
-    margin-right: 50px;
-    grid-template-columns: repeat(6, 225px);
-    grid-template-rows: repeat(6, 120px);
+    margin: auto 50px;
+    grid-template-columns: repeat(6, calc(90vw/6));
+    grid-template-rows: repeat(6, calc(80vh/6));
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
@@ -112,7 +111,63 @@ h1{
         width: 167px;
     }
 
-/*div img{
-    width: 60px;
-    height: 60px;
+
+/*PAGE 2*/
+#Cards{
+    background-image: url(./Images/fond\ ecran\ 2.jpg);
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+}
+
+section{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+}
+
+.div_left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.div_right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div_right>img{
+    transform: translateY(0px);
+    animation: float 6s ease-in-out infinite;
+}
+
+.infos{
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 2px solid #e93e08;
+    color: white;
+    border-radius: 100px;
+    text-align: center;
+    padding: 10px;
+}
+
+#desc{
+    width: 80%;
+    height: 40%;
+}
+
+#data{
+    width: 80%;
+    height: 60%;
+}
+
+@keyframes float{
+    0% {transform: translateY(0px)}
+    50% {transform: translateY(-20px)}
+    100% {transform: translateY(0px)}
 }
