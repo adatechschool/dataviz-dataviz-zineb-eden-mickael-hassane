@@ -13,7 +13,9 @@
     background-image: url(./Images/backgroundstarfield.gif);
     font-family: 'Orbitron', sans-serif;
 }
-
+img{
+    cursor: pointer;
+}
 /*flexboxes*/
 header{
     margin : 15px;
