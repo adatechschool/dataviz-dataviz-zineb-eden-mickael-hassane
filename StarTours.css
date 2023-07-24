@@ -14,7 +14,7 @@
     font-family: 'Orbitron', sans-serif;
 }
 img{
-    cursor: pointer;
+    cursor:pointer;
 }
 /*flexboxes*/
 header{
@@ -158,6 +158,7 @@ section{
     padding: 10px;
 }
 
+#prez{
 #prez{
     width: 80%;
     height: 40%;
