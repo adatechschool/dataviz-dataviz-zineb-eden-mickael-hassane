@@ -1,0 +1,128 @@
+/*Import de la police depuis google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/*On enlève les marges de la page entière*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*On met l'image de fond*/
+body {
+    background-image: url(./Images/backgroundstarfield.gif);
+    font-family: 'Orbitron', sans-serif;
+}
+
+/*flexboxes*/
+header {
+    margin: 15px;
+    display: flex;
+    /*J'active la fonction flexbox*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+header i {
+    color: white;
+    font-size: 40px
+}
+
+header img {
+    width: 60px;
+    height: 50px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.grid-images {
+    display: grid;
+    margin:auto 50px;
+    grid-template-columns: repeat(6, calc(90vw/6));
+    grid-template-rows: repeat(6, calc(80vh/6));
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#Bespin {
+    grid-area: 3 / 2 / 4 / 3;
+    height: 117px;
+    width: 117px;
+}
+
+#Coruscant {
+    transform: rotate(-20deg);
+    margin-top: 60px;
+    margin-left: 60px;
+    grid-area: 5 / 4 / 6 / 5;
+    height: 137px;
+    width: 137px;
+}
+
+#Endor {
+    transform: rotate(-15deg);
+    grid-area: 4 / 5 / 5 / 6;
+    height: 80px;
+    width: 80px;
+}
+
+#Felucia {
+    transform: rotate(30deg);
+    /* margin-right: 50px;
+    margin-top: 30px; */
+    grid-area: 1 / 5 / 2 / 6;
+    height: 100px;
+    width: 100px;
+}
+
+#Geonosis {
+    transform: rotate(15deg);
+    grid-area: 2 / 6 / 3 / 7;
+    height: 244px;
+    width: 244px;
+}
+
+#Hoth {
+    transform: rotate(230deg);
+    /* margin-left: 150px; */
+    grid-area: 2 / 3 / 3 / 4;
+    height: 57px;
+    width: 57px;
+}
+
+#Mustafar {
+    transform: rotate(-30deg);
+    /* margin-left: 120px; */
+    grid-area: 5 / 6 / 6 / 7;
+    height: 125px;
+    width: 125px;
+}
+
+#Naboo {
+    margin-bottom: 30px;
+    grid-area: 1 / 1 / 2 / 2;
+    height: 249px;
+    width: 249px;
+}
+
+#Scarif {
+    margin-top: 70px;
+    grid-area: 4 / 3 / 5 / 4;
+    height: 125px;
+    width: 135px;
+}
+
+#Tatooine {
+    transform: rotate(15deg);
+    grid-area: 5 / 1 / 6 / 2;
+    height: 167px;
+    width: 167px;
+}
+
+/*div img{
+    width: 60px;
+    height: 60px;
+}

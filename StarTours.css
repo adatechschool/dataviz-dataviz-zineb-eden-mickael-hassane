@@ -158,9 +158,14 @@ section{
     padding: 10px;
 }
 
-#desc{
+#prez{
     width: 80%;
     height: 40%;
+}
+
+#desc{
+    margin-top: 70px;
+    font-size: large;
 }
 
 #data{
@@ -168,8 +173,55 @@ section{
     height: 60%;
 }
 
+.titre{
+    text-transform: capitalize;
+    font-size: x-large;
+}
+
 @keyframes float{
     0% {transform: translateY(0px)}
     50% {transform: translateY(-20px)}
     100% {transform: translateY(0px)}
+}
+
+.intel{
+    margin-top: 30px;
+    line-height: 2;
+    font-size: large;
+}
+
+
+/*PAGE 2 SCROLL*/
+
+.div_left2{
+    margin: auto 60px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.div_left2>img{
+    border: #e93e08 2px solid;
+    border-radius: 32px;
+    margin-top: 50px;
+    max-width: 100%;
+    height: auto;
+}
+
+#locationName{
+    font-size: x-large;
+}
+
+.div_right2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }

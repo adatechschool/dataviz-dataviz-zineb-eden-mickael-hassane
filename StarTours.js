@@ -100,4 +100,3 @@ const planetNamesToCheck = [
     "Coruscant",  //  planet/9
     "Scarif",     //  planet/44
   ];
-  
