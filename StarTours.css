@@ -158,9 +158,13 @@ section{
     padding: 10px;
 }
 
-#desc{
+#prez{
     width: 80%;
     height: 40%;
+}
+
+#desc{
+    margin-top: 40px;
 }
 
 #data{
