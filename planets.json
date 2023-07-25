@@ -67,8 +67,8 @@
         {
             "name": "Mustafar",
             "id": 13,
-            "language": [],
-            "accomodation": " Vader's Castle",
+            "language": null,
+            "accomodation": "Vader's Castle",
             "currencies": [],
             "see": " Vader's Castle",
             "traveler": " Adventurer",
@@ -93,8 +93,8 @@
         {
             "name": "Hoth",
             "id": 4,
-            "language": [],
-            "accomodation": [" Rebel base", " Ice caves"],
+            "language": null,
+            "accomodation": ["Rebel base", "Ice caves"],
             "currencies": [],
             "see": [" Rebel base", " Ice caves", " Tauntaun riding"],
             "traveler": " Adventurer",
@@ -119,8 +119,8 @@
         {
             "name": "Felucia",
             "id": 17,
-            "language": [],
-            "accomodation": " Vegetal houses",
+            "language": null,
+            "accomodation": "Vegetal houses",
             "currencies": [],
             "see": [" Flora", " Colored giant mushrooms"],
             "traveler": " Adventurer",
