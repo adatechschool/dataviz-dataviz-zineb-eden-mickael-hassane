@@ -9,18 +9,35 @@
     crossorigin="anonymous"
     ></script>
     <script defer type="module" src="script.js"></script>
-    <script defer type="module" src="script.js"></script>
     <title>Star Tours</title>
 </head>
 <body id="Home">
+    <nav class="navbar">
+        <i class="fa-solid fa-bars barre-menu" ></i> 
+     <div class="nav-links">
+        <ul>
+            <li><a href="http://127.0.0.1:5500/StarTours.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/Planets.html?id=Bespin">Bespin</a></li>
+            <li><a href="http://127.0.0.1:5500/Planets.html?id=Coruscant">Coruscant</a></li>
+            <li><a href="http://127.0.0.1:5500/Planets.html?id=Endor">Endor</a></li>
+            <li><a href="http://127.0.0.1:5500/Planets.html?id=Felucia">Felucia</a></li>
+            <li><a href="http://127.0.0.1:5500/Planets.html?id=Geonosis">Geonosis</a></li>
+            <li><a href="http://127.0.0.1:5500/Planets.html?id=Hoth">Hoth</a></li>
+            <li><a href="http://127.0.0.1:5500/Planets.html?id=Mustafar">Mustafar</a></li>
+            <li><a href="http://127.0.0.1:5500/Planets.html?id=Naboo">Naboo</a></li>
+            <li><a href="http://127.0.0.1:5500/Planets.html?id=Scarif">Scarif</a></li>
+            <li><a href="http://127.0.0.1:5500/Planets.html?id=Tatooine">Tatooine</a></li>
+            <li><a href="">A propos</a></li>
+        </ul>
+     </div>  
+     <a href="StarTours.html"><img src="./Images/pinpng.com-chewbacca-head-png-3931344.png" 
+        alt="Logo Star Tours"></a>
+       
 
-   
-
-
-    <header>
-        <i class="fa-solid fa-bars"></i>
-        <a href="StarTours.html"><img src="./Images/pinpng.com-chewbacca-head-png-3931344.png" alt="Logo Star Tours"></a>
-    </header>
+        
+    
+    </nav>
+    
     <h1>Des destinations de rêve<br>pour des vacances de rêve</h1>
 
     <div class="grid-images">
@@ -85,7 +102,15 @@
        
  
     </div>
+    <script>
+    const menuHamburger = document.querySelector(".barre-menu")
+    const navLinks = document.querySelector(".nav-links")
 
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
     
 </body>
+
 </html>
