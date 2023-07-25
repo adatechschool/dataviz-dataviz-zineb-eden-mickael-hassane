@@ -99,10 +99,10 @@ console.log(location.href.split("/")[3].split(".")[0]);
 
 
 // HOVER PLANETES
-
-const body = document.querySelector("body");
-body.addEventListener('mouseenter',(event) =>{
-  let infoBulleList = document.querySelectorAll(".grid-images > div > div");
+let infoBulleList = document.querySelectorAll(".grid-images > div > div");
+const gridImage = document.querySelector(".grid-images");
+gridImage.addEventListener('mouseenter',(event) =>{
+  
   infoBulleList.forEach((info_bulle) =>{
     info_bulle.classList.add("hide");
   })
@@ -111,10 +111,38 @@ const elementsMouseover = document.querySelectorAll('.mouseover');
 
 
 elementsMouseover.forEach(element => {
+ element.addEventListener("mouseout",(event)=> {
+  
+    infoBulleList.forEach((info_bulle) =>{
+      info_bulle.classList.add("hide");
+    })
+ })
+
+ element.addEventListener("mouseover",(event)=> {
+  
+    infoBulleList.forEach((info_bulle) =>{
+      info_bulle.classList.add("hide");
+    })
+ })
  
+ element.addEventListener('mouseleave', (event) =>{
+
+  let info_bulle = document.querySelector(`#${event.target.name}>div`);  
+  
+  info_bulle.classList.add("hide");
+  console.log(info_bulle)
+  
+  })
+
   element.addEventListener('mouseenter', (event) => {
 
     console.log('entrée', event.target);
+    
+    
+    infoBulleList.forEach((info_bulle) =>{
+      info_bulle.classList.add("hide");
+    })
+
 
     fetch( "planets.json")
     .then(response => response.json())
@@ -169,19 +197,12 @@ elementsMouseover.forEach(element => {
   });
 });
 
-elementsMouseover.forEach(element =>{
-
-element.addEventListener('mouseleave', (event) =>{
-
-let info_bulle = document.querySelector(`#${event.target.name}>div`);  
-
-info_bulle.classList.add("hide");
-console.log(info_bulle)
-
-})
 
 
-});
+
+
+
+
 
 
 
