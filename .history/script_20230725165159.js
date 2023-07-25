@@ -12,15 +12,15 @@
     //     setTimeout(masquerChargement, 3000);
     // });
     
-    if(location.href.split("/")[3].split(".")[0] ==="loader"){
+    // if(location.href.split("/")[3].split(".")[0] ==="loader"){
 
-      setTimeout(() =>{
+    //   setTimeout(() =>{
 
-      window.location = "StarTours.html"
+    //   window.location = "StarTours.html"
 
-      }, 5000
-      )
-    };
+    //   }, 3000
+    //   )
+    // };
 
 
 

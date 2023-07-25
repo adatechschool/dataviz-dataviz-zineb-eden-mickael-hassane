@@ -25,6 +25,12 @@
 }
 
 
+.display-chargement{
+    display: flex;
+    justify-content: center;
+    ali
+}
+
 .lettre{
     color: #484848;
     font-size: 80px; ;

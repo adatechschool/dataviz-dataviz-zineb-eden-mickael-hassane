@@ -25,6 +25,10 @@
 }
 
 
+.display-chargement{
+    display: flex;
+}
+
 .lettre{
     color: #484848;
     font-size: 80px; ;

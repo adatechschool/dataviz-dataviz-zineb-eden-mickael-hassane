@@ -22,8 +22,8 @@
   justify-content: center;
   align-items: center;
   background-color: black;
+  
 }
-
 
 .lettre{
     color: #484848;
@@ -35,7 +35,7 @@
 
 @keyframes flash {
     0%{
-        color: #43b609;
+        color: #fff900;
         text-shadow: 0 0 7px #fff900;
     }
     90%{
@@ -43,7 +43,7 @@
         text-shadow: none;
     }
     100%{
-        color: #43b609;
+        color: #fff900;
         text-shadow: 0 0 7px #fff900;
     }
 }

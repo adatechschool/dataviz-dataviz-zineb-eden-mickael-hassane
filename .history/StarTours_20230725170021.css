@@ -24,6 +24,9 @@
   background-color: black;
 }
 
+#chargement-navette{
+    display: flex;
+}
 
 .lettre{
     color: #484848;
