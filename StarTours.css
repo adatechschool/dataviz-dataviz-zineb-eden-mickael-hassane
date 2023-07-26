@@ -426,3 +426,36 @@ section{
     align-items: center;
     gap: 50px;
 }
+
+
+
+/*PAGE VOYAGEUR*/
+
+.categories{
+    color: white;
+    margin: 100px 50px auto 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: #a5310d 2px solid;
+    border-radius: 32px;
+}
+
+#cat{
+    font-size: x-large;
+}
+
+#cat-desc{
+    font-size: medium;
+    margin-top: 20px;
+}
+
+#advise{
+    font-size: medium;
+    margin-top: 100px;
+}
