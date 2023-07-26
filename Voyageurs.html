@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="StarTours.css">
     <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/79f0380ae9.js" 
-    crossorigin="anonymous"
-    ></script>
-    <script defer src="planets.js"></script>
-    <title>Star Tours</title>
+    <script src="https://kit.fontawesome.com/79f0380ae9.js" crossorigin="anonymous"></script>
+    <script defer type="module" src="script.js"></script>
+    <title>Star Tours - Voyageur</title>
 </head>
-<body id="Cards">
+<body id="Home">
+
     <nav class="navbar">
         <i class="fa-solid fa-bars barre-menu" ></i> 
      <div class="nav-links">
@@ -33,49 +32,10 @@
      </div>  
      <a href="StarTours.html"><img src="./Images/pinpng.com-chewbacca-head-png-3931344.png" 
         alt="Logo Star Tours"></a>
-       
-
-        
-    
     </nav>
-    <section>
-        <div class="div_left">
-            <div class="infos" id="prez">
-                <p class="titre" id="planet">PLANETE</p>
-                <p id="desc">Description</p>
-            </div>
-            <div class="infos" id="data">
-                <p class="titre">INFOS</p>
-                <p class="intel" id="rotation">Rotation period</p>
-                <p class="intel" id="orbit">Orbital period</p>
-                <p class="intel" id="diameter">Diameter</p>
-                <p class="intel" id="gravity">Gravity</p>
-                <p class="intel" id="terrain">Terrain</p>
-                <p class="intel" id="climate">Climate</p>
-            </div>
-        </div>
-        <div class="div_right">
-            <img id="planeteImage" src="./Images/Bespin.png" alt="Image Bespin">
-        </div>
-    </section>
-    <section>
-        <div class="div_left2">
-            <img id="locationImage" src="./Images/CloudCity.png" alt="Image CloudCity">
-            <p id="locationName">Cloud City</p>
-        </div>
-        <div class="div_right2">
-            <div class="infos" id="data">
-                <p class="titre" id="planet2">PLANETE</p>
-                
-                <p class="intel" id="language">Langue(s)</p>
-                <p class="intel" id="accomodation">Hébergement(s)</p>
-                <p class="intel" id="currencies">Monnaie(s)</p>
-                <p class="intel" id="see">A visiter</p>
-                <p class="intel" id="residents">Population(s)</p>
-                <p class="intel" id="traveler">Pour les voyageurs</p>
-            </div>
-        </div>
-    </section>
+
+
+
     <script>
         const menuHamburger = document.querySelector(".barre-menu")
         const navLinks = document.querySelector(".nav-links")
@@ -84,5 +44,38 @@
         navLinks.classList.toggle('mobile-menu')
         })
     </script>
+
+
+
+    <h1>Quel type de voyageur êtes-vous ?</h1>
+
+    <div class="categories">
+        <div class="category">
+            <p id="cat">Adventurer</p>
+            <p id="cat-desc">Pour celleux qui aiment explorer de nouveaux horizons ou se perdre sur une planète inconnue</p>
+            <p id="advise">Planètes recommandées</p>
+        </div>
+        <div class="category">
+            <p id="cat">Architecture</p>
+            <p id="cat-desc">Pour les amateurs.trices d'art et de culture</p>
+            <p id="advise">Planètes recommandées</p>
+        </div>
+        <div class="category">
+            <p id="cat">Chill</p>
+            <p id="cat-desc">Pour les personnes qui cherchent à se poser dans un cadre paradisiaque</p>
+            <p id="advise">Planètes recommandées</p>
+        </div>
+        <div class="category">
+            <p id="cat">City</p>
+            <p id="cat-desc">Pour les citadin.e.s qui ne dorment jamais et qui aiment l'énergie des grandes cités</p>
+            <p id="advise">Planètes recommandées</p>
+        </div>
+        <div class="category">
+            <p id="cat">Hitchhiker</p>
+            <p id="cat-desc">Pour les randonneur.euse.s, baladeur.euse.s, flâneur.euse.s et plein d'autres eur.euse.s</p>
+            <p id="advise">Planètes recommandées</p>
+        </div>
+    </div>
+    
 </body>
 </html>

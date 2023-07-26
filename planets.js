@@ -51,12 +51,3 @@ const imageToChange = document.getElementById("planeteImage");
 imageToChange.src = `./Images/${currentPlanet}.png`;
 imageToChange.alt = `Image ${currentPlanet}`;
 getPlanetPrez();
-
-
-
-
-
-
-
-
-
