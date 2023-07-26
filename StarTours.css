@@ -79,6 +79,156 @@
     animation-delay:1s;
 }
 
+#chargement {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.lettre {
+    color: #484848;
+    font-size: 80px;
+    ;
+    letter-spacing: 15px;
+    margin-bottom: 150px;
+    animation: flash 1.2s linear infinite;
+}
+@keyframes flash {
+    0% {
+        color: #098EB6;
+        text-shadow: 0 0 9px #E94E07;
+    }
+    90% {
+        color: #484848;
+        text-shadow: none;
+    }
+    100% {
+        color: #098EB6;
+        text-shadow: 0 0 9px #E94E07;
+    }
+}
+.lettre:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.lettre:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.lettre:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.lettre:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.lettre:nth-child(5) {
+    animation-delay: 0.5s;
+}
+.lettre:nth-child(6) {
+    animation-delay: 0.6s;
+}
+.lettre:nth-child(7) {
+    animation-delay: 0.7s;
+}
+.lettre:nth-child(8) {
+    animation-delay: 0.8s;
+}
+.lettre:nth-child(9) {
+    animation-delay: 0.9s;
+}
+.lettre:nth-child(10) {
+    animation-delay: 1s;
+}
+/* LOADER ETOILE FILANTE  */
+body {
+    background: black;
+}
+.star {
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #FFF;
+    top: 100px;
+    left: 400px;
+    position: relative;
+    transform-origin: 100% 0;
+    animation: star-ani 1s infinite ease-out;
+    animation-direction: normal;
+    opacity: 0;
+}
+.star:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 4px;
+    border: 2px solid #F00;
+    border-width: 2px 150px 2px 150px;
+    border-color: transparent transparent transparent #FFF;
+    transform: rotate(-45deg) translate3d(15px, -1px, 0);
+    transform-origin: 0% 100%;
+    animation: shooting-ani 1s infinite ease-out;
+    animation-direction: normal;
+}
+.pink {
+    top: 150px;
+    left: 800px;
+    background: #FF5A99;
+    animation-delay: 1.8s;
+}
+.pink:after {
+    border-color: transparent transparent transparent #FF5A99;
+    animation-delay: 1.8s;
+}
+.blue {
+    top: 100px;
+    left: 1000px;
+    background: #4DABFF;
+    animation-delay: 4.5s;
+}
+.blue:after {
+    border-color: transparent transparent transparent #4DABFF;
+    animation-delay: 4.5s;
+}
+.yellow {
+    top: 50px;
+    right: 700px;
+    background: #FFCD5C;
+    animation-delay: 5.8s;
+}
+.yellow:after {
+    border-color: transparent transparent transparent #FFCD5C;
+    animation-delay: 5.8s;
+}
+@keyframes shooting-ani {
+    0% {}
+    50% {
+        transform: scale(1) rotate(-45deg) translate(0px, 0px);
+    }
+    100% {
+        transform: scale(0.5) rotate(-45deg) translate(0px, -1px);
+    }
+}
+@keyframes star-ani {
+    0% {
+        opacity: 0;
+        transform: scale(0) rotate(0) translate3d(0, 0, 0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1) rotate(0) translate3d(-200px, 200px, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1) rotate(0) translate3d(-300px, 300px, 0);
+    }
+}
+
+
+
+
 
 
 /*On met l'image de fond*/
@@ -184,11 +334,9 @@ h1{
         border: 1px #e93e08 solid ;
         border-radius: 8px;
         color: #e93e08;
-        height: 60px;
-        width: 180px;
+        max-width: 270px;
         position: absolute;
-        top: -30%;
-        right: 0;
+        padding: 5px;
     }
 
     .hide{
@@ -198,6 +346,10 @@ h1{
 
     #Bespin{
         grid-area: 3 / 2 / 4 / 3; 
+    }
+    #Bespin >div {
+        top: -80px;
+        right: -120px;
     }
     #Bespin>img { 
         
@@ -211,6 +363,10 @@ h1{
         /* margin-top: 60px;
         margin-left: 60px; */
     }
+    #Coruscant >div {
+        top: -10px;
+        right: -180px;
+    }
 
     #Coruscant >img { 
         transform: rotate(-20deg);
@@ -223,7 +379,10 @@ h1{
     #Endor {
         grid-area: 4 / 5 / 5 / 6; 
     }
-
+    #Endor >div {
+        top: -70px;
+        left: -180px;
+    }
 
     #Endor >img { 
         transform: rotate(-15deg);
@@ -233,6 +392,10 @@ h1{
     
     #Felucia{
         grid-area: 1 / 5 / 2 / 6; 
+    }
+    #Felucia >div {
+        top: -20px;
+        right: -80px;
     }
 
     
@@ -248,7 +411,10 @@ h1{
     #Geonosis{
     grid-area: 2 / 6 / 3 / 7; 
     }
-
+    #Geonosis >div {
+        top: -70px;
+        right: -80px;
+    }
 
     #Geonosis>img { 
         transform: rotate(15deg);
@@ -260,6 +426,12 @@ h1{
        grid-area: 2 / 3 / 3 / 4;
 
     }
+
+    #Hoth >div {
+        top: -80px;
+        right: -180px;
+    }
+    
 
     #Hoth > img { 
         transform: rotate(230deg);
@@ -273,6 +445,12 @@ h1{
         grid-area: 5 / 6 / 6 / 7;
     }
 
+    #Mustafar >div {
+        top: -70px;
+        left: -50px;
+    }
+    
+
     #Mustafar>img { 
         transform: rotate(-30deg);
         margin-left: 120px;    
@@ -283,7 +461,10 @@ h1{
     #Naboo{
         grid-area: 1 / 1 / 2 / 2; 
     }
-
+    #Naboo >div {
+        top: -20px;
+        right: -200px;
+    }
 
     #Naboo>img { 
         margin-bottom: 30px;
@@ -294,7 +475,10 @@ h1{
     #Scarif{
         grid-area: 4 / 3 / 5 / 4; 
     }
-
+    #Scarif >div {
+        top: 20px;
+        right: -100px;
+    }
 
     #Scarif > img{ 
         margin-top: 70px;
@@ -305,7 +489,10 @@ h1{
     #Tatooine{
     grid-area: 5 / 1 / 6 / 2; 
     }
-
+    #Tatooine >div {
+        top: -50px;
+        right: -120px;
+    }
     #Tatooine>img { 
         transform: rotate(15deg);
         height: 167px;
@@ -426,6 +613,42 @@ section{
     align-items: center;
     gap: 50px;
 }
+
+/*PAGE VOYAGEUR*/
+
+.categories{
+    color: white;
+    margin: 100px 50px auto 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: #a5310d 2px solid;
+    border-radius: 32px;
+}
+
+#cat{
+    font-size: x-large;
+}
+
+#cat-desc{
+    font-size: medium;
+    margin-top: 20px;
+}
+
+#advise{
+    font-size: medium;
+    margin-top: 100px;
+}
+
+
+
+
+
 
 
 
