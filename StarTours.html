@@ -95,14 +95,12 @@
             <img src="./Images/Tatooine.png"  alt="Image Tatooine"  class="mouseover" name="Tatooine">          
             <div class="info-bulle hide"></div> 
         </div>
+
+        <div id="Donut">        
+            <img src="./Images/Donut.png"  alt="Image Donut"  class="mouseover" name="Donut" onclick="JouerSon()">          
+            <div class="info-bulle hide"></div> 
+        </div>
         
-        
-        
-        
-        
-       
-       
- 
     </div>
     <script>
     const menuHamburger = document.querySelector(".barre-menu")
@@ -112,6 +110,15 @@
     navLinks.classList.toggle('mobile-menu')
     })
 </script>
+
+<audio autoplay="false" id="Donut" src="./Images/wouh-pinaise.mp3">
+</audio>
+<!-- <script>
+    function JouerSon() {
+            var sound = document.getElementById("Donut");
+            sound.play();
+        }
+</script> -->
     
 </body>
 

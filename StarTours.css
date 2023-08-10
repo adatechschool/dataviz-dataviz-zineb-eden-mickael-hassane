@@ -499,6 +499,18 @@ h1{
         width: 167px;
     }
 
+    #Donut{
+        grid-area: 5 / 5 / 6 / 6; 
+        }
+        
+    #Donut>img { 
+        margin-top: 100px;
+        margin-left: 150px;
+        transform: rotate(15deg);
+        height: 67px;
+        width: 67px;
+    }
+
 
 /*PAGE 2*/
 #Cards{
@@ -659,6 +671,13 @@ section{
     margin: 100px 50px auto 50px;
     display: flex;
     flex-direction: row;
+    gap: 10px;
+}
+
+.categories img{
+    width: 50px;
+    height: 50px
+    ;
 }
 
 .category{
@@ -667,6 +686,7 @@ section{
     text-align: center;
     border: #a5310d 2px solid;
     border-radius: 32px;
+    width: 600px;
 }
 
 #cat{

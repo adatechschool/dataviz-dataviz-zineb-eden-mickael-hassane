@@ -31,6 +31,7 @@ let planetId;
 // With FOREACH
 imageList.forEach((image) =>
   image.addEventListener("click", (event) => {
+    if (event.target.name !== 'Donut')
     window.location = `Planets.html?id=${event.target.name}`;
   })
 );
@@ -61,6 +62,12 @@ elementsMouseover.forEach((element) => {
     info_bulle.innerHTML = `<p>Nom : ${jsonOfPlanets[index].name}</p><p>Langue : ${langue}</p><p>Climat :${apiOfPlanets[index].climate}</p><p>Voyageur : ${voyageur}</p>`;
   });
 });
+
+function JouerSon() {
+  var sound = document.getElementById("Donut");
+  sound.play();
+}
+
 
 
 
